@@ -1,0 +1,698 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary: #780000;
+    --books-section:#540000;
+    --book-1-section:#300505;
+    --secondary: #181818;
+    --book-2-section: #311316;
+    --book-3-section:#1B0323;
+
+}
+
+header{ 
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+#check{
+    display: none;
+}
+header label{
+    font-size: 30px;  
+    padding:10px 15px; 
+    border: 1px solid var(--primary);
+    background-color: black;
+    border-radius: 10px;
+    color:  var(--primary);
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+}
+.logo img{
+    height:104px;
+    padding: 20px;
+}
+nav{
+    display: flex;
+}
+nav .links{
+    font-family: "inter";
+    display: flex;
+    font-size:20px;
+    gap: 23px;
+    padding-left: 108px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.help-div{
+    display: none;
+}
+
+main, footer{
+    font-family: "Amiri";
+}
+#front-page{
+    background-color: var(--books-section);
+}
+.center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Banner section */
+.banner{
+    background-color: black;
+    height: 678px;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+.banner .banner-content{
+    width:1040px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    position: relative; 
+}
+.banner .banner-content img{
+    position: absolute;
+}
+
+.banner .banner-content .autorka{
+    height: 80%;
+    right:21px;
+    top:15px;
+    z-index: 2;
+    border-radius: 56px;
+}
+.banner .banner-content .pero{
+    width: 308px;
+    height: 314px;
+    left:465px;
+    top:150px;
+    z-index: 1;
+    border-radius: 56px;
+}
+
+.banner .banner-content h1{
+    font-family: "Cormorant SC";
+    color: var(--primary);
+    font-size: 96px;
+    text-align: center; 
+    width: 100%;
+    padding-top: 35px;
+    line-height: 116.26px;
+}
+.banner .banner-content h1,.banner .banner-content h2, .banner .banner-content .banner-description{
+    z-index: 3;
+}
+.banner .banner-content h2{ 
+    font-size: 64px;  
+    font-weight: lighter;
+    line-height: 112.51px;
+}
+.banner .banner-content p{ 
+    font-size: 24px;  
+    font-weight: lighter;
+    line-height: 42.19px;
+}
+
+.banner .banner-description{
+    margin-left: 57px;
+    width: 440px;
+    align-self: flex-start;
+}
+/* Book overview section*/
+.books-overview{ 
+    min-height: 678px; 
+    overflow:hidden;
+    position: relative;
+    width:990px; 
+}
+.books-overview .flora2{
+    position: absolute;
+    top: 0px;
+    right: -7px;
+    transform: rotate(-180deg);
+    height: 639px;
+    width:  639px; 
+    z-index: 0;
+    overflow-x: hidden;
+}
+.books-overview .flora1{
+    position: absolute;
+    bottom: 0px;
+    left: -7px; 
+    height: 682px;
+    width:  685px; 
+    z-index: 0;
+}
+.books-overview .books-overview-title{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-top: 30px;
+    z-index: 1;
+}
+.books-overview .books-overview-title h1{
+    font-size: 64px;font-weight: 300;
+    color: white;
+}
+ .line{
+    width:148px;
+    border-bottom: 1px solid white;
+}
+
+.books-overview .books-overview-catalog{
+    display: grid;
+    gap: 34px;
+    grid-template-columns: repeat(3, 1fr);
+    padding:0 95px 102px 95px;
+} 
+.books-overview .books-overview-catalog .books-overview-card{
+    padding: 20px;
+    font-size: 20px;
+}
+.books-overview .books-overview-catalog .books-overview-card .book-3{
+    transform: rotate(12.42deg);
+}
+
+.books-overview .books-overview-catalog .books-overview-card img
+{
+    width: 100%;
+}
+ 
+.books-overview .books-overview-catalog .books-overview-card p{
+    text-align: center;
+    color: white;
+}
+/* Video section */
+.video-section{
+    height:1000px;  
+    width: 100%;
+}
+.video-section iframe{
+    width:100%;
+    height:100%;
+}
+footer{
+    background-color: black;
+    height:163px;
+    color: white; 
+
+}
+footer img{
+    height:52px; 
+}
+footer i{
+    color: var(--primary);
+    font-size: 31px;
+    overflow: hidden;
+}
+.footer-container{
+    flex-direction: row;
+    justify-content: space-between;
+    min-width:990px;
+}
+
+.footer-lower-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+span{
+    text-align: center;
+}
+.footer-lower{
+    display: flex;
+    gap: 46px;
+}
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+    
+}
+.bookTitle{
+    background-color: var(--secondary);  
+    height: unset; 
+    gap: 100px;
+}
+.bookTitle .books-overview-title h1{
+    font-size: 36px; 
+    margin-top: 50px;
+    text-align: center;
+}
+.bookTitle .books-overview-title .line{
+    
+    margin-top: 50px;
+}
+.flower1{
+    width: 245.65px;
+    height: 209.25px;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+}
+.flower2{
+    width: 245.65px;
+    height: 209.25px;
+    position: absolute;
+    left: -67px;
+    bottom: 63px;
+}
+.history{ 
+    text-align: center;
+    color: white;
+    max-width: 455px;
+    margin-top: 50px;
+    z-index: 100;
+}
+.history h3:last-of-type{
+    color: red;
+}
+.book-section{
+    gap: 40px;
+    text-align: center;
+    width: 990px;
+    position: relative;
+    overflow-x: hidden;
+}
+.book-section .ink{
+    position: absolute;
+    width:488px;
+    height: 332px;
+    right:-70px;
+    bottom: 50px;
+}
+.book-section .book-cover{
+   max-width:417px;
+   
+}
+.book-3{
+    width: 884px;
+    transform: rotate(12.42deg); 
+}
+.book-section p{
+    color: white;
+    font-size: 24px;
+    line-height: 42.19px;  
+}
+.book-section .p-1{
+    max-width: 462px;
+}
+
+.book-section .p-2{
+    max-width: 616px;
+}
+.book-section .p-3{
+    max-width: 449px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.book-section .p-4{
+    font-size: 20px;
+    display: flex;
+    color: white;
+    gap: 60px;
+    justify-content: space-between;
+}
+.book-section .p-4 p{
+    text-align: left;
+    width: 291px;
+}
+.book-section .p-5{
+    width: 598px;
+}
+.book-section .p-6{
+    width: 474px;
+}
+.book-section button{
+    width: 308px;
+    height: 58px;
+    border-radius: 40px;
+    background: #FFFFFF;
+    color: black;
+    font-family: "Amiri";
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 4;
+    margin-top: 70px;
+    margin-bottom: 180px;
+}
+.break-line{
+    border: 1px solid white;
+    width: 412px;
+}
+/* Book 1 */
+.book-1-section{
+    background-color: var(--book-1-section);
+}
+.book-2-section{
+    background-color: var(--book-2-section);
+}
+.book-3-section{
+    background-color: var(--book-3-section);
+}
+.book-2 #break-line{
+     margin-top: -120px;
+}
+.title-settings{
+    margin-top: 54px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 22px; 
+    z-index: 1;
+    color: white;
+}
+
+/* Kontakt forma */
+.form-settings{
+    padding: 50px;
+}
+.contact-form-container{
+    width: 768px;
+    background-image: url('./assets/images/kontakt\ forma.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.contact-form-container h1{
+    font-size: 36px;
+}
+.contact-form-container .form-input{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.contact-form-container .form-input i{
+    font-size: 32px;
+    overflow: hidden;
+}
+.contact-form-container .form-input label{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    font-size: 32px;
+}
+.contact-form-container .form-input input{
+    border:none;
+    border-bottom: 1px solid black;
+    width: 247px;
+    height:20px;
+    font-size: 32px;
+    outline: none;
+    font-weight: 100;
+    font-family: "Amiri";
+}
+.contact-form-container .form-input textarea{
+    width: 100%;
+    min-height: 120px;
+    font-family: "Amiri";
+    font-size: 32px;
+    border: none; resize: none;
+    border-bottom: 1px solid black;
+}
+.contact-form-container .button-input{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+} 
+.contact-form-container .button-input label{
+    font-size: 36px;
+    font-weight: 700;
+}
+.contact-form-container .button-input button{
+    width:40px;
+    height:40px;
+    font-size: 24px;
+    background-color: black;
+    border:none;
+    border-radius: 10px;
+    color: white; 
+}
+.contact-form-container .button-input button i{
+    overflow: hidden;
+}
+@media screen and (max-width:1006px){
+    *{
+
+        overflow-x: hidden;
+    }
+    .banner .banner-content .autorka{
+         
+        right: 21px;
+    }
+    .banner .banner-content .pero{
+        left:418px;
+    }
+    .banner .banner-content{
+        width:100%; 
+    }
+    .books-overview{
+        width:100%;
+    }
+}
+@media screen and (max-width:990px) {
+    
+    .banner .banner-content .autorka{
+        left:660px;
+        right:unset;
+    }
+    .banner .banner-content{
+        width:100%;
+        overflow: hidden;
+    }
+    .center-content .video-section{
+        width:100%;
+    }
+    .center-content .video-section{
+        height:525px;
+    }
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-around;
+        min-width:100%;
+    }
+}
+@media screen and (max-width:922px) {
+    header{
+        justify-content: space-between;
+    }
+    header label{
+        display: block;
+
+    } 
+    .help-div{
+        display: block;
+    }
+    nav{  
+        flex-direction: column;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 100;
+        right:-200%;
+        top: 0px;
+        background-color: var(--primary);
+        color: var(--primary);
+        height: 100vh;   
+        width: 50%;
+        transition: 0.3s ease-in-out;
+        padding: 20px;
+        
+    } 
+    
+    nav .links{ 
+        flex-direction: column;
+        gap: 30px;
+    }
+    nav .close-btn{ 
+       padding: 10px 15px;
+       display: inline-block;
+       align-self: flex-end;
+    }
+    #check:checked ~ nav{
+        right: 0px;
+    }
+    .books-overview .books-overview-catalog{
+        display: grid;
+        gap: 34px;
+        grid-template-columns: repeat(1, 1fr);
+         
+    } 
+    .form-settings{
+        padding: 0px;
+    } 
+    .form-input{ 
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:815px) {
+    .banner{
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer{
+        height: unset;
+        padding: 20px;
+    }
+    .footer-container, .footer-lower{
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    
+    .footer-social{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    .banner .banner-content .autorka{
+        position: unset;
+        padding: 10px;
+        width: 480px;
+        height: 480px;
+        object-fit: cover; 
+        object-position: 100% 0;
+        align-self: center;
+     }
+     .banner .banner-content p { 
+        width: unset;
+        height: unset;
+    }
+    .book-section .p-1, .book-section .p-2 {
+       width:60%;
+        padding: 50px;
+        font-size: 20px;
+    }
+    .form-input{
+        padding: 0;
+    }
+    .form-input i{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        width: 100%;
+        z-index: 200;
+    }
+    
+    .banner .banner-content h1 {
+        text-align: start;
+        font-size: 70px;
+        padding: 10px;
+    }
+    .banner .banner-content h2 {
+        font-size: 40px;
+    }
+    .banner .banner-content p { 
+        width: unset;
+        height: unset;
+    }
+    .banner .banner-description{ 
+        margin-left: 0px;
+        padding:10px;
+        width: 100%;
+    } 
+    .banner .banner-content .pero{
+        left:250px;
+        z-index: 0;
+        top:-40px
+     }
+     .book-section .p-1, .book-section .p-2,.book-section .p-3,.book-section .p-4, .book-section .p-5, .book-section .p-6 {
+        width:40%;
+        padding: 50px;
+        font-size: 20px;
+     }
+     .book-section .ink{ 
+        z-index: 3;
+        right:90px; 
+    }
+    .book-section .p-4{
+        flex-direction: column;
+        text-align: center;
+    }  
+    .contact-form-container{
+        width: 100%;
+        padding-bottom: 100px;
+    } 
+    .contact-form-container h1{
+        font-size: 25px;
+    }
+    
+    .contact-form-container .form-input{
+        width: 100%;
+        padding: 20px;
+       justify-content: center;
+    }
+    .contact-form-container .form-input p{
+         
+        font-size: 20px;
+    }
+    #message{
+        width:80%;
+        font-size: 20px;
+        outline: none;
+    }
+    .book-3{
+       width: unset;
+    }
+    .book-3{
+        width: 300px;
+     }
+      
+     .contact-form-container{
+        background: none;
+     }
+}
+
+@media screen and (max-width:442px) {
+    .banner .banner-content h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .history{
+        padding: 10px;
+    }
+    
+    .form-input span i{
+     overflow: hidden;
+        padding: 0;
+    }
+}
+
+ 
+
+
+
+
