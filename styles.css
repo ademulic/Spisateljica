@@ -385,7 +385,7 @@ span{
 }
 .contact-form-container{
     width: 768px;
-    background-image: url('./assets/images/kontakt\ forma.png');
+    background-image: url('./assets/images/kontakt/forma.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
